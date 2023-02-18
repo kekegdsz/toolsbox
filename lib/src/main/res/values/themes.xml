@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ToolsBox" parent="QMUI.Compat.NoActionBar">
+        <!--Appbar背景色-->
+        <item name="colorPrimary">@color/purple_500</item>
+        <!-- 状态栏颜色-->
+        <item name="colorPrimaryDark">@color/white</item>
+        <!--控制各个控件被选中时的颜色-->
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

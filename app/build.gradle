@@ -13,7 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
 
     buildTypes {
@@ -37,4 +37,7 @@ dependencies {
     testImplementation deps_version.junit
     androidTestImplementation deps_version.test_runner
     androidTestImplementation deps_version.test_espresso
+
+    implementation project(':lib')
+
 }

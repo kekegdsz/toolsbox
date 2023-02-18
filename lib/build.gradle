@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -10,7 +11,7 @@ android {
         minSdk 21
         targetSdk 32
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         consumerProguardFiles "consumer-rules.pro"
     }
 
@@ -30,9 +31,12 @@ android {
 }
 
 dependencies {
+    implementation deps_version.appcompat
+    implementation deps_version.constraint
+    testImplementation deps_version.junit
+    androidTestImplementation deps_version.test_runner
+    androidTestImplementation deps_version.test_espresso
 
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation deps_version.qmui
+    kapt deps_version.arch
 }
