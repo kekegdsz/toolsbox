@@ -1,12 +1,17 @@
 ext {
     deps_version = [
-            appcompat    : 'androidx.appcompat:appcompat:1.0.0',
-            constraint   : 'androidx.constraintlayout:constraintlayout:1.1.3',
-            junit        : "junit:junit:4.13.2",
-            test_runner  : 'androidx.test.ext:junit:1.1.1',
-            test_espresso: 'androidx.test.espresso:espresso-core:3.1.0',
+            appcompat     : 'androidx.appcompat:appcompat:1.3.0',
+            ktx           : 'androidx.core:core-ktx:1.7.0',
+            constraint    : 'androidx.constraintlayout:constraintlayout:2.0.4',
+            material      : 'com.google.android.material:material:1.4.0',
+            livedata      : 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1',
+            viewmodel     : 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1',
+            junit         : "junit:junit:4.13.2",
+            test_runner   : 'androidx.test.ext:junit:1.1.1',
+            test_espresso : 'androidx.test.espresso:espresso-core:3.1.0',
 
-            qmui         : "com.qmuiteam:qmui:2.0.0-alpha10",
-            arch         : "com.qmuiteam:arch-compiler:2.0.0-alpha10"
+            qmui          : "com.qmuiteam:qmui:2.0.0-alpha10",
+            arch          : "com.qmuiteam:arch-compiler:2.0.0-alpha10",
+            flycoTabLayout: "io.github.h07000223:flycoTabLayout:3.0.0"
     ]
 }
