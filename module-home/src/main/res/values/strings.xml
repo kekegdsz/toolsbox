@@ -1,1 +1,4 @@
-<resources></resources>
+<resources>
+
+    <string name="widget_my">我的组件</string>
+</resources>

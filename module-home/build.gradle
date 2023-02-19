@@ -37,6 +37,7 @@ dependencies {
     implementation deps_version.material
     implementation deps_version.livedata
     implementation deps_version.viewmodel
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation deps_version.junit
     androidTestImplementation deps_version.test_runner
     androidTestImplementation deps_version.test_espresso
