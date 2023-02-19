@@ -1,5 +1,6 @@
 package com.overarching.sky.module.home.ui.widget
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -70,14 +71,12 @@ class WidgetsFragment : BaseFragment() {
         viewPager?.setCurrentItem(0, false)
         val tabBuilder = tabSegment?.tabBuilder()
         fragments.forEach {
-            val qmuiTab =
-                tabBuilder
-                    ?.setTextSize(
-                        QMUIDisplayHelper.dp2px(activity, 14),
-                        QMUIDisplayHelper.dp2px(activity, 14)
-                    )
-                    ?.setText((it as WidgetPageFragment).title)
-                    ?.build(activity)
+            val title = (it as WidgetPageFragment).title
+            tabBuilder?.setTextSize(
+                QMUIDisplayHelper.dp2px(activity, 14),
+                QMUIDisplayHelper.dp2px(activity, 14)
+            )?.setText(title)
+            val qmuiTab = tabBuilder?.build(activity)
             tabSegment?.addTab(qmuiTab)
         }
         val space = QMUIDisplayHelper.dp2px(context, 16)
