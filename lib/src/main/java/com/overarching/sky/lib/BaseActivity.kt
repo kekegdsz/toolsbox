@@ -1,7 +1,7 @@
 package com.overarching.sky.lib
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import com.qmuiteam.qmui.arch.QMUIActivity
 import com.qmuiteam.qmui.util.QMUIStatusBarHelper
 
 /**
@@ -10,7 +10,7 @@ import com.qmuiteam.qmui.util.QMUIStatusBarHelper
  * @date: 2023/2/18 16:12
  * 基类
  */
-open class BaseActivity : AppCompatActivity() {
+open class BaseActivity : QMUIActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         QMUIStatusBarHelper.setStatusBarLightMode(this)

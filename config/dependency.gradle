@@ -11,7 +11,8 @@ ext {
             test_espresso : 'androidx.test.espresso:espresso-core:3.1.0',
 
             qmui          : "com.qmuiteam:qmui:2.0.0-alpha10",
-            arch          : "com.qmuiteam:arch-compiler:2.0.0-alpha10",
+            qmui_arch     : "com.qmuiteam:arch:2.0.0-alpha10",
+            arch_compiler          : "com.qmuiteam:arch-compiler:2.0.0-alpha10",
             flycoTabLayout: "io.github.h07000223:flycoTabLayout:3.0.0"
     ]
 }

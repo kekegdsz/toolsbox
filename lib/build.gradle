@@ -38,5 +38,6 @@ dependencies {
     androidTestImplementation deps_version.test_espresso
 
     api deps_version.qmui
-    kapt deps_version.arch
+    api deps_version.qmui_arch
+    kapt deps_version.arch_compiler
 }

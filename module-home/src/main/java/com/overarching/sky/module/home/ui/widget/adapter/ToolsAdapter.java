@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.overarching.sky.module.home.R;
 import com.qmuiteam.qmui.util.QMUIDisplayHelper;
 
+import org.jetbrains.annotations.Nullable;
+
 import java.util.List;
 
 /**
@@ -45,6 +47,11 @@ public class ToolsAdapter extends RecyclerView.Adapter {
     @Override
     public int getItemCount() {
         return items == null ? 0 : items.size();
+    }
+
+    public void setData(@Nullable List<String> data) {
+        this.items = data;
+        notifyDataSetChanged();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
