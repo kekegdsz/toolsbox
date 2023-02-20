@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.overarching.sky.lib.BaseFragment
 import com.overarching.sky.module.home.R
+import com.overarching.sky.module.home.data.BaseWidgetBean
 import com.overarching.sky.module.home.ui.pager.adapter.WidgetsAdapter
 
 class WidgetPageFragment(val title: String) : BaseFragment() {
@@ -29,7 +30,7 @@ class WidgetPageFragment(val title: String) : BaseFragment() {
     }
 
     private fun initAdapter() {
-        val items = mutableListOf<String>()
+        val items = mutableListOf<BaseWidgetBean>()
         widgetAdapter = WidgetsAdapter(items)
         val linearLayoutManager = LinearLayoutManager(activity)
         linearLayoutManager.orientation = LinearLayoutManager.VERTICAL
